@@ -5,15 +5,16 @@ declare global {
 }
 
 Array.prototype.groupBy = function (fn) {
-  const groupedObj = this.reduce((prev, current) => {
-    const computedKey = fn(current);
-    prev[computedKey] = undefined;
-    return prev;
-  }, {});
+  const groupedObj = {};
 
-  for (const ikey in groupedObj) {
-    groupedObj[ikey] = this.filter((item) => fn(item) === ikey);
-  }
+  this.forEach((element) => {
+    const computedKey = fn(element);
+    if (groupedObj[computedKey] === undefined) {
+      groupedObj[computedKey] = [element];
+    } else {
+      groupedObj[computedKey].push(element);
+    }
+  });
 
   return groupedObj;
 };
