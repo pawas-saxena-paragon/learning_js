@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/debounce/
 type F = (...args: number[]) => void;
 
 function debounce(fn: F, t: number): F {
