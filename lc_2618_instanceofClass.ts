@@ -6,6 +6,7 @@ export function checkIfInstanceOf(obj: any, classFunction: any): boolean {
     }
 
     obj = Object.getPrototypeOf(obj);
+    //sds
   }
 
   return false;
