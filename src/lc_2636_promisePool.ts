@@ -1,12 +1,19 @@
 // https://youtu.be/DB8pAAg-9xw?si=TdRVvtkHyayAJJLe
-export function promisePool(fns: Promise<any>[], n: number): Promise<any> {
+export function promisePool(
+  fns: (() => Promise<any>)[],
+  n: number,
+): Promise<any> {
   return new Promise(async (resolve, reject) => {
-    const nestedPromises = nest(fns, n);
+    const nestedPromiseFns = nest(fns, n);
     let successResults = [];
-    for (let i = 0; i < nestedPromises.length; i++) {
-      const promisePoolChunk = nestedPromises[i];
+    for (let i = 0; i < nestedPromiseFns.length; i++) {
+      const promisePoolChunk = nestedPromiseFns[i];
       try {
-        const chunkSuccessResult = await Promise.all(promisePoolChunk);
+        const chunkPromises = promisePoolChunk.map(
+          //@ts-ignore
+          (promiseFn: () => Promsie<any>) => promiseFn(),
+        );
+        const chunkSuccessResult = await Promise.all(chunkPromises);
         successResults = [...successResults, ...chunkSuccessResult];
       } catch (err) {
         return reject(err);
