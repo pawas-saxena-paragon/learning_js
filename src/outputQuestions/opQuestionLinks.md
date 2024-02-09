@@ -2,7 +2,7 @@
 - https://github.com/sudheerj/javascript-interview-questions#74-what-is-the-output-of-below-code
 - https://github.com/sudheerj/javascript-interview-questions#72-what-is-the-output-of-below-code
 - [this in an object](https://github.com/sudheerj/javascript-interview-questions#71-what-is-the-output-of-below-code)
-- https://github.com/sudheerj/javascript-interview-questions#70-what-is-the-output-of-below-code
+- [declaring function and fn expression at same time](https://github.com/sudheerj/javascript-interview-questions#70-what-is-the-output-of-below-code)
 - [scope](https://github.com/sudheerj/javascript-interview-questions#69-what-is-the-output-of-below-code-in-an-order)
 - [iife](https://github.com/sudheerj/javascript-interview-questions#66-what-is-the-output-of-below-code)
 - [promises vs setTimeout execution order](https://github.com/sudheerj/javascript-interview-questions#65-what-is-the-output-order-of-below-code)
@@ -20,4 +20,3 @@
 - [delete on array](https://github.com/sudheerj/javascript-interview-questions#7-what-is-the-output-of-below-code)
 - [function definition inside of if condn](https://github.com/sudheerj/javascript-interview-questions#5-what-is-the-output-of-below-code)
 - [floating point numbers comparison](https://github.com/sudheerj/javascript-interview-questions#4-what-is-the-output-of-below-equality-check)
-

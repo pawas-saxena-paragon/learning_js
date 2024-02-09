@@ -32,7 +32,7 @@
 **Imp**
 - [shallow copy vs deep copy](https://github.com/sudheerj/javascript-interview-questions#what-is-the-difference-between-shallow-and-deep-copy)
 - [mixin](https://github.com/sudheerj/javascript-interview-questions#does-javascript-uses-mixins)
-- [abort controller](https://github.com/sudheerj/javascript-interview-questions#how-do-you-disable-right-click-in-the-web-page)
+- [abort controller](https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#how-to-cancel-a-fetch-request)
 - [queueMicrotask](https://github.com/sudheerj/javascript-interview-questions#what-is-the-purpose-of-queuemicrotask)
 - [difference between object and map](https://github.com/sudheerj/javascript-interview-questions#how-do-you-compare-object-and-map)
 - [getter setter](https://github.com/sudheerj/javascript-interview-questions#what-are-javascript-accessors)
